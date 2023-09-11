@@ -15,11 +15,7 @@ public class AircraftDoor {
         this.lockedState = new LockedState(this);
         this.openState = new OpenState(this);
         this.slideDeployedState = new SlideDeployedState();
-        this.state = new OpenState(this);
-    }
-
-    public String getName() {
-        return name;
+        setState(openState);
     }
 
     public String closeDoor() {

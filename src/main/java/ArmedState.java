@@ -25,7 +25,7 @@ public class ArmedState implements State {
 
     @Override
     public String armDoor() {
-        return null;
+        return Messages.DOOR_CANNOT_PERFORM_THIS_ACTION;
     }
 
     @Override
